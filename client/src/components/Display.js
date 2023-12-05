@@ -23,11 +23,13 @@ const Display = ({ contract, account }) => {
       // console.log(str);
       // console.log(str_array);
       const images = str_array.map((item, i) => {
+        console.log(item)
+        console.log(`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`)
         return (
           <a href={item} key={i} target="_blank">
             <img
               key={i}
-              src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`}
+              src={item}
               alt="new"
               className="image-list"
             ></img>
