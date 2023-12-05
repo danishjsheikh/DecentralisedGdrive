@@ -6,7 +6,7 @@ async function main() {
 
   await upload.deployed();
 
-  console.log(`REACT_APP_CONTRACT_ADDRESS: ${upload.address}`);
+  console.log(`REACT_APP_CONTRACT_ADDRESS=${upload.address}`);
 }
 
 main().catch((error) => {

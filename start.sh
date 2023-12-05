@@ -1,6 +1,6 @@
 #!/bin/bash
 
-npx hardhat node
+npx hardhat node &
 sleep 10
 echo "Hardhat start hogaya"
 npx hardhat run --network localhost scripts/deploy.js > ./client/.env
